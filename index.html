@@ -1,54 +1,42 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background: #121212;
+    color: white;
+    line-height: 1.6;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=Roboto:wght@300;400;700&display=swap"
-        rel="stylesheet">
-    <title>Ozflix - O Mágico de Oz</title>
-</head>
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-<body>
-    <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <h1>Ozflix</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#trailer">Trailer</a></li>
-                    <li><a href="#galeria">Galeria</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Cabeçalho */
+header {
+    background: #FFD700;
+    color: #121212;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #FFC300;
+}
 
-    <!-- Seção de Apresentação -->
-    <section class="hero">
-        <div class="container">
-            <h2>O Mágico de Oz</h2>
-            <p>Uma jornada épica pela estrada de tijolos amarelos, cheia de magia, aventura e descobertas!</p>
-            <a href="#trailer" class="btn">Assista ao Trailer</a>
-        </div>
-    </section>
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
 
-    <!-- Seção Sobre -->
-    <section id="sobre" class="sobre">
-        <div class="container">
-            <h2>Sobre o Filme</h2>
-            <p>
-                Lançado em 1939, **O Mágico de Oz** é um dos maiores clássicos da fantasia. Acompanhe Dorothy e seus
-                amigos — o Espantalho, o Homem de Lata e o Leão Covarde — em uma jornada inesquecível pelo mundo de Oz.
-            </p>
-        </div>
-    </section>
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-    <!-- Seção Trailer -->
-    <section id="trailer" class="trailer">
-        <div class="container">
-            <h2>Trailer Oficial</
+header nav ul li {
+    display: inline;
+}
+
+header
