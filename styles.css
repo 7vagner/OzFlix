@@ -1,100 +1,71 @@
-/* Estilos Gerais */
 body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    background: #121212;
-    color: #fff;
-    line-height: 1.6;
+    color: white;
+    background: #2a2a2a; /* Fundo mais neutro, inspirado no tema fantástico */
+    margin: 0px;
+    font-family: "Chakra Petch", sans-serif;
+    margin-bottom: 100px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Cabeçalho */
 header {
-    background: #FFD700;
-    color: #121212;
-    padding: 20px 0;
+    border-bottom: solid 2px #FFD700; /* Dourado, inspirado na estrada de tijolos amarelos */
+    padding: 20px;
+    font-size: 32px;
+    color: #FFD700;
     text-align: center;
-    border-bottom: 2px solid #FFC300;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
+.chamada {
+    background: linear-gradient(135deg, #88c9bf, #e2a5b6); /* Tons suaves, remetendo à magia */
+    padding-bottom: 80px;
+    padding-top: 80px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    align-items: center;
 }
 
-header nav ul li a {
-    color: #121212;
-    text-decoration: none;
-    font-weight: bold;
+.chamada-texto {
+    margin-right: 5%;
+    max-width: 50%;
 }
 
-/* Hero */
-.hero {
-    background: linear-gradient(45deg, #FFD700, #FFC300);
-    color: #121212;
-    text-align: center;
-    padding: 50px 20px;
+h1 {
+    font-size: 40px;
+    color: #FFD700; /* Dourado como destaque */
 }
 
-.hero h2 {
-    font-size: 36px;
+p {
+    font-size: 20px;
+    color: #fff; /* Contraste para legibilidade */
 }
 
-.hero p {
-    font-size: 18px;
-    margin: 10px 0 20px;
+.categoria {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 50px;
 }
 
-.hero .btn {
-    padding: 10px 20px;
-    background: #121212;
+.categoria h2 {
     color: #FFD700;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-/* Galeria */
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.galeria-grid img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.galeria-grid img:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-.galeria-grid p {
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-/* Rodapé */
-footer {
-    background: #FFD700;
-    color: #121212;
-    text-align: center;
-    padding: 10px 0;
+.categoria-videos {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.categoria-videos img {
+    opacity: 0.8;
+    height: 200px;
+    border-radius: 8px; /* Bordas arredondadas para suavizar o design */
+    transition: opacity 0.3s, transform 0.3s; /* Animação suave */
+}
+
+.categoria-videos img:hover {
+    opacity: 1.0;
+    border: 3px solid #FFD700; /* Destaque ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento */
 }
