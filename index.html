@@ -1,42 +1,94 @@
-/* Estilos Gerais */
-body {
-    margin: 0;
-    font-family: "Roboto", sans-serif;
-    background: #121212;
-    color: white;
-    line-height: 1.6;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Ozflix - O Mágico de Oz</title>
+</head>
 
-/* Cabeçalho */
-header {
-    background: #FFD700;
-    color: #121212;
-    padding: 20px 0;
-    text-align: center;
-    border-bottom: 2px solid #FFC300;
-}
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Ozflix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#trailer">Trailer</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-header h1 {
-    margin: 0;
-    font-size: 28px;
-}
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h2>O Mágico de Oz</h2>
+            <p>Explore o universo mágico da estrada de tijolos amarelos e embarque em uma aventura inesquecível!</p>
+            <a href="#trailer" class="btn">Assista ao Trailer</a>
+        </div>
+    </section>
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
+    <!-- Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre o Filme</h2>
+            <p>Lançado em 1939, **O Mágico de Oz** é um dos maiores clássicos da fantasia, contando a história de Dorothy e seus amigos no mundo de Oz.</p>
+        </div>
+    </section>
 
-header nav ul li {
-    display: inline;
-}
+    <!-- Trailer -->
+    <section id="trailer" class="trailer">
+        <div class="container">
+            <h2>Trailer Oficial</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PSZxmZmBfnU"
+                title="Trailer O Mágico de Oz" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
 
-header
+    <!-- Galeria -->
+    <section id="galeria" class="galeria">
+        <div class="container">
+            <h2>Galeria de Filmes Relacionados</h2>
+            <div class="galeria-grid">
+                <div>
+                    <a href="https://www.youtube.com/watch?v=vrDpJc9Xuzw">
+                        <img src="https://img.youtube.com/vi/vrDpJc9Xuzw/mqdefault.jpg" alt="Wicked Trailer">
+                    </a>
+                    <p>Wicked</p>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=nIhC6c0ojEc">
+                        <img src="https://img.youtube.com/vi/nIhC6c0ojEc/mqdefault.jpg" alt="Oz Mágico e Poderoso">
+                    </a>
+                    <p>Oz Mágico e Poderoso</p>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=X1RxFjfiqcM">
+                        <img src="https://img.youtube.com/vi/X1RxFjfiqcM/mqdefault.jpg" alt="Alice no País das Maravilhas">
+                    </a>
+                    <p>Alice no País das Maravilhas</p>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/watch?v=s4gsPRc5ZZk">
+                        <img src="https://img.youtube.com/vi/s4gsPRc5ZZk/mqdefault.jpg" alt="Fantástica Fábrica de Chocolate">
+                    </a>
+                    <p>A Fantástica Fábrica de Chocolate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Ozflix. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
