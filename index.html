@@ -1,53 +1,54 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600&family=Roboto:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <title>Ozflix</title>
+    <title>Ozflix - O Mágico de Oz</title>
 </head>
 
 <body>
-    <header>OZFLIX</header>
-
-    <section class="chamada">
-        <div class="chamada-texto">
-            <h1>O MÁGICO DE OZ</h1>
-            <p>#clássicos #aventura #fantasia</p>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>Ozflix</h1>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#trailer">Trailer</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PSZxmZmBfnU" 
-                title="O Mágico de Oz - Trailer" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <section class="categoria">
-        <h2>Filmes Relacionados</h2>
-        <div class="categoria-videos">
-            <a href="https://www.youtube.com/watch?v=vrDpJc9Xuzw">
-                <img src="https://img.youtube.com/vi/vrDpJc9Xuzw/maxresdefault.jpg" alt="Wicked Trailer" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=nIhC6c0ojEc">
-                <img src="https://img.youtube.com/vi/nIhC6c0ojEc/maxresdefault.jpg" alt="Oz: Mágico e Poderoso" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=X1RxFjfiqcM">
-                <img src="https://img.youtube.com/vi/X1RxFjfiqcM/maxresdefault.jpg" alt="Alice no País das Maravilhas" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=s4gsPRc5ZZk">
-                <img src="https://img.youtube.com/vi/s4gsPRc5ZZk/maxresdefault.jpg" alt="A Fantástica Fábrica de Chocolate" />
-            </a>
-            <a href="https://www.youtube.com/watch?v=y8j9RKWwSoQ">
-                <img src="https://img.youtube.com/vi/y8j9RKWwSoQ/maxresdefault.jpg" alt="Encantada" />
-            </a>
+    <!-- Seção de Apresentação -->
+    <section class="hero">
+        <div class="container">
+            <h2>O Mágico de Oz</h2>
+            <p>Uma jornada épica pela estrada de tijolos amarelos, cheia de magia, aventura e descobertas!</p>
+            <a href="#trailer" class="btn">Assista ao Trailer</a>
         </div>
     </section>
 
-</body>
+    <!-- Seção Sobre -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <h2>Sobre o Filme</h2>
+            <p>
+                Lançado em 1939, **O Mágico de Oz** é um dos maiores clássicos da fantasia. Acompanhe Dorothy e seus
+                amigos — o Espantalho, o Homem de Lata e o Leão Covarde — em uma jornada inesquecível pelo mundo de Oz.
+            </p>
+        </div>
+    </section>
 
-</html>
+    <!-- Seção Trailer -->
+    <section id="trailer" class="trailer">
+        <div class="container">
+            <h2>Trailer Oficial</
